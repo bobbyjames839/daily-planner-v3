@@ -1,0 +1,155 @@
+.reminders-goals {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reminders-goals-inner {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/*Reminders*/
+
+.reminders {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rg-title {
+  font-size: 26px;
+  padding-left: 10px;
+}
+
+/*Create reminders*/
+
+.create-reminder {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.create-reminder button {
+  width: 11.5%;
+  border: none;
+  background-color: rgb(94, 94, 255);
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.create-reminder input {
+  width: 86.5%;
+  height: 46px;
+  outline: none;
+  padding-left: 2%;
+  font-size: 16px;
+  background: rgb(238, 238, 238);
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 2px solid rgb(94, 94, 255);
+  border-right: none;
+}
+
+/*Reminders list*/
+
+.reminders-list {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reminder {
+  box-shadow: 0 0 5px rgb(94, 94, 255);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 10px 0;
+  border: 2px solid rgb(94, 94, 255);
+  font-size: 17px;
+}
+
+.reminder .fa-chevron-down {
+  cursor: pointer;
+}
+
+.reminder p {
+  display: flex;
+  align-items: center;
+  min-width: 380px;
+}
+
+.reminder .fa-circle {
+  font-size: 10px;
+  margin-right: 12px;
+  margin-top: 1px;
+}
+
+.reminder-ghost {
+  opacity: .3;
+}
+
+/*Reminder buttons */
+
+.reminder-buttons {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  flex-direction: column;
+  height: 100%;
+}
+
+.reminder-buttons span {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(94, 94, 255);
+  margin: 0;
+}
+
+.reminder-buttons button {
+  border: none;
+  height: 19px;
+  border-left: 2px solid rgb(94, 94, 255);
+  padding: 0 4px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.reminder-delete-button {
+  border-top-right-radius: 3px;
+  background: rgb(255, 90, 90);
+}
+
+.reminder-complete-button {
+  border-bottom-right-radius: 3px;
+  background-color: rgb(0, 185, 0);
+}
+
+.reminder-completed-icon {
+  right: 3px;
+  top: 3px;
+  font-size: 20px;
+  position: absolute;
+  background-color: rgb(103, 231, 53);
+  border: 2px solid rgb(94, 94, 255);
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
